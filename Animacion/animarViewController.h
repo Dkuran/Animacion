@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface animarViewController : UIViewController
+@interface animarViewController : UIViewController{
 
+    IBOutlet UIImageView *image;
+    
+}
+
+
+- (IBAction)play;
+- (IBAction)stop;
 @end

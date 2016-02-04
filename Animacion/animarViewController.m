@@ -26,4 +26,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)play{
+
+    image.animationImages = [NSArray arrayWithObjects:
+                              [UIImage imageNamed:@"1.jpg"],
+                              [UIImage imageNamed:@"2.jpg"],
+                              [UIImage imageNamed:@"3.jpg"],
+                              [UIImage imageNamed:@"4.jpg"],nil ];
+                             [image setAnimationRepeatCount:-1];
+                             image.animationDuration = .5;
+                             [image startAnimating];
+}
+                             
+                             
+-(IBAction)stop{
+
+    [image stopAnimating];
+
+}
+
 @end
